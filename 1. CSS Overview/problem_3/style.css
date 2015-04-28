@@ -1,7 +1,45 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Chris
- * Date: 28.4.2015 г.
- * Time: 20:43
- */
+body{
+    background-color: #A9A9A9;
+    font-size: 14px;
+}
+
+body>header{
+    text-align: center;
+    font-size: 1.2em;
+}
+article>header{
+    font-size: 1.4em;
+}
+
+h1{
+   color: #FAFAD2;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style-type: none;
+}
+ul a{
+
+    color: #FAFAD2;
+    font-weight: bold;
+}
+
+li:nth-child(2) > a{
+    background-color: #D3D3D3;
+}
+li:nth-last-child(1) > a {
+    text-decoration: underline;
+}
+
+section footer{
+    font-size: 0.8em;
+}
+body > footer{
+    text-align: center;
+}
+
