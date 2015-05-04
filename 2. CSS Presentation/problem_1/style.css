@@ -1,11 +1,11 @@
 p{
     color: #0094ff;
     font-size: 18px;
-    font-family: Consolas;
+    font-family: Consolas, sans-serif;
 }
 
 p:first-letter{
-    font-family: Edwardian Script ITC;
+    font-family: Edwardian Script ITC, serif;
     font-size: 2.3em;
 }
 

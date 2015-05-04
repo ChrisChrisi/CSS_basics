@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Windows Calculator</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="calc_frame">
+    <!--Frame Menu-->
+    <div id="frame_menu">
+        <span class="pull_left"><img src="images/calc_icon.png"> Calculator </span>
+        <span class="pull_right" id="action_buttons"><img src="images/frame_actions.png"/></span>
+    </div>
+    <!--/Frame Menu-->
+    <!--Calculator Body-->
+    <div id="calc_main">
+        <!--Actions menu-->
+        <div id="actions_menu">
+            <button class="unstyled"><span class="underlined">V</span>iew</button>
+            <button class="unstyled"><span class="underlined">E</span>dit</button>
+            <button class="unstyled"><span class="underlined">H</span>elp</button>
+        </div>
+        <!--/Actions menu-->
+        <!--Calculator Display-->
+        <form id="calc_display">
+            <input class="unstyled" type="text" value="8854455"/>
+        </form>
+        <!--/Calculator Display-->
+        <!--Binary numbers-->
+        <div id="binary_numbers">
+            <ul class="unstyled_li">
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+                <li>0000</li>
+            </ul>
+            <ul class="unstyled_li inactive">
+                <li>63</li>
+                <li>47</li>
+                <li>32</li>
+            </ul>
+            <ul class="unstyled_li">
+                <li>0000</li>
+                <li>0000</li>
+                <li>1000</li>
+                <li>0111</li>
+                <li>0001</li>
+                <li>1011</li>
+                <li>1011</li>
+                <li>0111</li>
+            </ul>
+            <ul class="unstyled_li inactive">
+                <li>31</li>
+                <li>15</li>
+                <li>0</li>
+            </ul>
+        </div>
+        <!--/Binary numbers-->
+        <!--Numeral System / Word Size options-->
+        <div id="num_options">
+            <form>
+                <ul class="unstyled_li">
+                    <li>
+                        <input type="radio" name="numeral_system" value="16" id="hex"/>
+                        <label for="hex">Hex</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="numeral_system" checked value="10" id="dec"/>
+                        <label for="dec">Dec</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="numeral_system" value="8" id="oct"/>
+                        <label for="oct">Oct</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="numeral_system" value="2" id="bin"/>
+                        <label for="bin">Bin</label>
+                    </li>
+                </ul>
+                <ul class="unstyled_li">
+                    <li>
+                        <input type="radio" name="word_size" checked value="qword" id="qword"/>
+                        <label for="qword">Qword</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="word_size" value="dword" id="dword"/>
+                        <label for="dword">Dword</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="word_size" value="word" id="word"/>
+                        <label for="word">Word</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="word_size" value="byte" id="byte"/>
+                        <label for="byte">Byte</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <!--/Numeral System / Word Size options-->
+        <!--Calculator num pad-->
+        <div id="numpad">
+            <form>
+                <div>
+                    <input type="button" class="" disabled value="&nbsp;"/>
+                    <input type="button" class="" value="Mod"/>
+                    <input type="button" class="" disabled value="A"/>
+                    <input type="button" class="secondary" value="MC"/>
+                    <input type="button" class="secondary" value="MR"/>
+                    <input type="button" class="secondary" value="MS"/>
+                    <input type="button" class="secondary" value="M+"/>
+                    <input type="button" class="secondary" value="M-"/>
+                </div>
+                <div>
+                    <input type="button" class="" value="&#40;"/>
+                    <input type="button" class="" value="&#41;"/>
+                    <input type="button" class="" disabled value="B"/>
+                    <input type="button" class="" value="&#8592;"/>
+                    <input type="button" class="" value="CE"/>
+                    <input type="button" class="" value="C"/>
+                    <input type="button" class="" value="&#177;"/>
+                    <input type="button" class="" disabled value="&#8730;"/>
+                </div>
+                <div>
+                    <input type="button" class="" value="RoL"/>
+                    <input type="button" class="" value="RoR"/>
+                    <input type="button" class="" disabled value="C"/>
+                    <input type="button" class="primary" value="7"/>
+                    <input type="button" class="primary" value="8"/>
+                    <input type="button" class="primary" value="9"/>
+                    <input type="button" class="" value="&#47;"/>
+                    <input type="button" class="" disabled value="&#37;"/>
+                </div>
+                <div>
+                    <input type="button" class="" value="Or"/>
+                    <input type="button" class="" value="Xor"/>
+                    <input type="button" class="" disabled value="D"/>
+                    <input type="button" class="primary" value="4"/>
+                    <input type="button" class="primary" value="5"/>
+                    <input type="button" class="primary" value="6"/>
+                    <input type="button" class="" value="&#42;"/>
+                    <input type="button" class="" disabled value="1/x"/>
+                </div>
+                <div>
+                    <input type="button" class="" value="Lsh"/>
+                    <input type="button" class="" value="Rsh"/>
+                    <input type="button" class="" disabled value="E"/>
+                    <input type="button" class="primary" value="1"/>
+                    <input type="button" class="primary" value="2"/>
+                    <input type="button" class="primary" value="3"/>
+                    <input type="button" class="" value="&#45;"/>
+                </div>
+                <div>
+                    <input type="button" id="equal" class="" value="&#61;"/>
+                </div>
+                <div>
+                    <input type="button" class="" value="Not"/>
+                    <input type="button" class="" value="And"/>
+                    <input type="button" class="" disabled value="F"/>
+                    <input type="button" id="zero" class="" value="0"/>
+                    <input type="button" class="" disabled value=","/>
+                    <input type="button"  class="" value="&#43;"/>
+                </div>
+
+            </form>
+        </div>
+        <!--Calculator num pad-->
+    </div>
+    <!--/Calculator Body-->
+</section>
+
+</body>
+</html>

@@ -24,7 +24,7 @@ div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside {
 }
 
 body {
-    font: 14px normal Arial;
+    font: 14px normal Arial, serif;
     color: white;
     background: #d090fa; /* Old browsers */
     background: -moz-linear-gradient(top, #d090fa 1%, #8d15ef 15%, #9215f2 100%); /* FF3.6+ */
@@ -77,8 +77,7 @@ body header div#header-container div#reg-form-container button {
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
-    border: 1px solid #603382;
-    border-style: outset;
+    border: 1px outset #603382;
     border-radius: 10px;
     padding: 5px 8px;
     color: #ffffff;
@@ -95,7 +94,7 @@ body header nav {
     width: 75%;
     margin: 20px 20px 20px 20px;
     padding: 12px;
-    border: 2px solid #3A0A61;
+    border: 1px solid #3A0A61;
     border-radius: 15px;
 }
 
@@ -179,7 +178,7 @@ body section article footer {
 }
 
 body section article footer p {
-    font-size: 16px;
+    font-size: 1.05em;
     text-align: right;
     font-weight: normal;
 }
@@ -224,7 +223,7 @@ body aside > ul > li p {
     margin-right: 5px;
     margin-bottom: 10px;
     margin-left: 5px;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 body aside > ul > li p a {
@@ -249,14 +248,14 @@ body aside > ul > li ul {
     margin-top: 10px;
     margin-right: 0;
     margin-bottom: 10px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 body aside > ul > li ul li {
     margin-top: 5px;
     margin-left: 10px;
-    margin-bottom: 0px;
-    margin-right: 0px;
+    margin-bottom: 0;
+    margin-right: 0;
     background: url(images/li-dot.png) no-repeat;
     background-position: 0 50%;
     padding-left: 25px;
@@ -266,8 +265,8 @@ body footer {
     clear: both;
     padding-top: 15px;
     padding-bottom: 25px;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
     text-align: center;
 }
 

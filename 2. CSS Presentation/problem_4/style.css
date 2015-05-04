@@ -1,0 +1,217 @@
+body, button, input{
+    color: #333;
+    font: 12px/1.2 Segoe UI, sans-serif;
+}
+
+.pull_left{
+    float: left;
+}
+
+.pull_right{
+    float: right;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.unstyled{
+    background: none;
+    border: none;
+}
+
+.unstyled_li{
+    list-style: none;
+}
+
+.float_left{
+    float: left;
+}
+
+#calc_frame{
+    width: 400px;
+    background-color: #CBE3FB;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.inactive{
+    color: #666;;
+}
+
+#frame_menu{
+    margin-bottom: 3px;
+    display: inline-block;
+    width: inherit;
+}
+
+#frame_menu img {
+    vertical-align: middle;
+}
+
+#frame_menu #action_buttons{
+   margin-top: -5px;
+}
+
+#calc_main{
+    height: 340px;
+    padding: 0 0 5px;
+    border: 1px solid #999;
+    background: -webkit-linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+    background:    -moz-linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+    background:      -o-linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+    background:         linear-gradient(#F0F0F0 0px, #D9E4F1 100px);
+    color: #1C3759;
+}
+#actions_menu{
+
+    background: -webkit-linear-gradient(#FEFEFF 0%, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+    background:    -moz-linear-gradient(#FEFEFF 0%, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+    background:      -o-linear-gradient(#FEFEFF 0%, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+    background:         linear-gradient(#FEFEFF 0%, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+}
+
+#actions_menu button{
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 20px;
+}
+
+#actions_menu button:hover{
+    border: 1px solid #96C2ED;
+    background-color: #D5E7F8;
+    height: 20px;
+}
+
+#calc_display{
+    margin: 10px 10px 0 10px;
+    padding: 15px 5px 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(#E6EFFB, #FFFFFF);
+    background:    -moz-linear-gradient(#E6EFFB, #FFFFFF);
+    background:      -o-linear-gradient(#E6EFFB, #FFFFFF);
+    background:         linear-gradient(#E6EFFB, #FFFFFF);
+}
+
+#calc_display input{
+    font-size: 23px;
+    width: 100%;
+    text-align: right;
+}
+
+#binary_numbers{
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin:  5px 10px 0px 10px;
+    padding: 3px;
+    font-family: Consolas, monospace;
+}
+
+#binary_numbers ul {
+    padding: 0;
+    margin: 0;
+    display:inline-block;
+    width: 100%;
+}
+
+#binary_numbers ul li {
+    font-size: 13px;
+    width: 33px;
+    float: left;
+    line-height: 84%;
+}
+
+#binary_numbers ul li + li{
+    margin-left: 15px;
+}
+
+#binary_numbers .inactive li:first-child{
+width: 177px;
+}
+
+#binary_numbers .inactive li:last-child{
+    width: 124px;
+    text-align: right;
+}
+
+#num_options, #num_options form{
+    float: left;
+    display: table;
+}
+#num_options ul{
+    margin: 5px 5px 5px 10px;
+    padding: 5px 0 5px 0;
+    border: 1px solid #727F8D;
+    border-radius: 3px;
+    color: #1C3759;
+    width:  70px;
+}
+#numpad{
+    margin-top: 3px;
+}
+#numpad form div{
+    float: left;
+
+}
+
+#numpad form div:last-child{
+    margin-top: -30px;
+}
+input[type=button]{
+    padding: 0;
+    color: #1C3759;
+    width:  35px;
+    height: 27px;
+    border-radius: 3px;
+    margin-top: 3px;
+    line-height: 25px;
+    border: 1px solid #8797AA;
+    background: -webkit-linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%);
+    background:    -moz-linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%);
+    background:      -o-linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%);
+    background:         linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%);
+}
+
+input.primary{
+    background: -webkit-linear-gradient(#F7FBFF 0%, #EDF3F8 49%, #E7EDF5 50%, #F3FBFF 100%);
+    background:    -moz-linear-gradient(#F7FBFF 0%, #EDF3F8 49%, #E7EDF5 50%, #F3FBFF 100%);
+    background:      -o-linear-gradient(#F7FBFF 0%, #EDF3F8 49%, #E7EDF5 50%, #F3FBFF 100%);
+    background:         linear-gradient(#F7FBFF 0%, #EDF3F8 49%, #E7EDF5 50%, #F3FBFF 100%);
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+
+}
+input[type=button]:not([disabled]):hover {
+    border-color: #F5D50F;
+    background: -webkit-linear-gradient(#FEF5EB 0%, #FCE3C6 49%, #FBD075 50%, #FCF8CA 100%);
+    background:    -moz-linear-gradient(#FEF5EB 0%, #FCE3C6 49%, #FBD075 50%, #FCF8CA 100%);
+    background:      -o-linear-gradient(#FEF5EB 0%, #FCE3C6 49%, #FBD075 50%, #FCF8CA 100%);
+    background:         linear-gradient(#FEF5EB 0%, #FCE3C6 49%, #FBD075 50%, #FCF8CA 100%);
+}
+
+input[disabled]{
+    background: transparent;
+    border-color: #B4C2D1;
+}
+
+input.secondary{
+    background: #D4E0ED;
+}
+
+#zero {
+    width: 73px;
+
+}
+
+#equal{
+    height: 57px;
+    margin-left: 3px;
+    font-weight: bold;
+    font-size: 17px;
+}
