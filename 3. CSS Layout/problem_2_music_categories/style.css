@@ -1,0 +1,67 @@
+/*
+@ToDo:
+    - height of the sections: should be according to the content, not fixed
+    - position of the buttons span
+    - buttons borders
+*/
+
+article{
+    width: 421px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+}
+
+
+article > h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.4em;
+
+}
+
+section{
+    position: relative;
+    padding: 15px;
+    margin: 30px 5px 30px 5px;
+    height: 85px;
+    background-color: #FFFFFF;
+    border: 1px solid #a2a2a2;
+
+}
+
+section > img{
+    vertical-align: middle;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #a2a2a2;
+}
+
+section > p{
+    margin: 0;
+}
+section .buttons{
+    position: absolute;
+    float: right;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+input[type=button]{
+    background: url("./images/button.png");
+    text-align: center;
+    border: none;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+input[type=button]:hover{
+    background: url("./images/button_hover.png");
+    border: none;
+
+}
