@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+
+li {
+    color: #98A5B5;
+}
+
+/*make the indentation of the nested list smaller*/
+ul ul {
+    padding-left: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*hide the sublists by default*/
+ul li ul {
+    display: none;
+}
+
+/*show the direct sublist when hovering on the parent*/
+ul li:hover > ul {
+    display: block;
+}
