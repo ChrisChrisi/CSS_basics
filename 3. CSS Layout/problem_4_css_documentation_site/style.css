@@ -1,0 +1,154 @@
+body, h1, h2, h3, nav, aside, main, footer, ul {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body{
+    font-family: calibri, sans-serif;
+    font-size: 13px;
+}
+
+a{
+    color: #8D0200;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.container {
+    width: 99.2%;
+    display: table;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid black;
+    background: #F1F1F1;
+}
+
+nav {
+    display: table-row;
+    width: 13%;
+    min-width: 120px;
+    float: left;
+    padding: 3px;
+
+}
+
+nav h2{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 12px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 12px;
+}
+
+nav ul li:first-child{
+    color: #8D0200;
+    font-weight: bolder;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+
+aside {
+    display: table-row;
+    width: 13%;
+    min-width: 120px;
+    float: right;
+    text-align: center;
+}
+
+aside section{
+    border: 1px solid #B1B1B1;
+    margin: 0 3px 3px 0;
+    padding:3px;
+    background: #FFFFFF;
+}
+
+aside section h3 {
+    margin: 0;
+}
+
+aside a {
+    display: block;
+}
+
+aside form{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+aside input[type=text] {
+    width: 65%;
+    border: 1px solid #83A0BB;
+}
+
+aside input[type=submit]{
+    font-weight: bold;
+    width: 20px;
+    padding: 0;
+}
+.blue_button{
+    border: none;
+    background: url("images/button.png");
+    width: 98px;
+    height: 28px;
+    color: #4cc7f3;
+}
+
+main {
+    width: 72%;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 5px;
+    border: 1px solid #B1B1B1;
+    background: #FFFFFF;
+}
+
+main h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.85em;
+}
+
+main h2, aside h3{
+    background: #808080;
+    padding-left: 3px;
+    margin-bottom: 13px;
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+main section{
+    margin-bottom: 13px;
+}
+
+main section img{
+    float: left;
+    margin-right: 15px;
+}
+input.prev{
+   background: url("images/button_previous.png");
+    width: 100px;
+    height: 21px;
+    border: none;
+}
+
+input.next{
+    background: url("images/button_next.png");
+    width: 100px;
+    height: 21px;
+    border: none;
+}
