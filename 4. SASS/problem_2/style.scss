@@ -1,0 +1,28 @@
+@mixin box_size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+body {
+  input[type="radio"] {
+    display: none;
+    &:checked + img {
+      @include box_size(480px, 480px);
+      top: 170px;
+      display: block;
+      position: absolute;
+    }
+
+  }
+  label {
+    display: inline-block;
+    img {
+      @include box_size(150px, 150px)
+    }
+  }
+
+  > img {
+    display: none;
+  }
+
+}

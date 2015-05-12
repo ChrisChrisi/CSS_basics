@@ -1,0 +1,17 @@
+body input[type="radio"] {
+  display: none; }
+  body input[type="radio"]:checked + img {
+    width: 480px;
+    height: 480px;
+    top: 170px;
+    display: block;
+    position: absolute; }
+body label {
+  display: inline-block; }
+  body label img {
+    width: 150px;
+    height: 150px; }
+body > img {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
